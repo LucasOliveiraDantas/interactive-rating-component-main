@@ -16,10 +16,7 @@ item1.addEventListener("click", function(){
     item4.classList.remove("select")
     item5.classList.remove("select")
 
-    ctn2.classList.add("show")
-    ctn1.classList.add("off")
-    star.innerHTML = "1"
-
+    
 })
 item2.addEventListener("click", function(){
     item1.classList.remove("select")
@@ -28,9 +25,7 @@ item2.addEventListener("click", function(){
     item4.classList.remove("select")
     item5.classList.remove("select")
 
-    ctn2.classList.add("show")
-    ctn1.classList.add("off")
-    star.innerHTML = "2"
+   
 })
 item3.addEventListener("click", function(){
     item1.classList.remove("select")
@@ -39,9 +34,7 @@ item3.addEventListener("click", function(){
     item4.classList.remove("select")
     item5.classList.remove("select")
 
-    ctn2.classList.add("show")
-    ctn1.classList.add("off")
-    star.innerHTML = "3"
+    
 })
 item4.addEventListener("click", function(){
     item1.classList.remove("select")
@@ -50,9 +43,7 @@ item4.addEventListener("click", function(){
     item4.classList.add("select")
     item5.classList.remove("select")
 
-    ctn2.classList.add("show")
-    ctn1.classList.add("off")
-    star.innerHTML = "4"
+    
 })
 item5.addEventListener("click", function(){
     item1.classList.remove("select")
@@ -61,7 +52,32 @@ item5.addEventListener("click", function(){
     item4.classList.remove("select")
     item5.classList.add("select")
 
-    ctn2.classList.add("show")
-    ctn1.classList.add("off")
-    star.innerHTML = "5"
+    
 })
+function Submit(){
+    if(item1.classList.contains("select")){
+        ctn2.classList.add("show")
+        ctn1.classList.add("off")
+        star.innerHTML = "1"
+
+    }else if(item2.classList.contains("select")){
+        ctn2.classList.add("show")
+        ctn1.classList.add("off")
+        star.innerHTML = "2"
+
+    }else if(item3.classList.contains("select")){
+        ctn2.classList.add("show")
+        ctn1.classList.add("off")
+        star.innerHTML = "3"
+
+    }else if(item4.classList.contains("select")){
+        ctn2.classList.add("show")
+        ctn1.classList.add("off")
+        star.innerHTML = "4"
+
+    }else if(item5.classList.contains("select")){
+        ctn2.classList.add("show")
+        ctn1.classList.add("off")
+        star.innerHTML = "5"
+    }
+}
